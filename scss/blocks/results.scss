@@ -1,0 +1,29 @@
+.results {
+    background: url("..//img/background12.png") center center;
+    width: 100%;
+    min-height: 100vh;
+    font-family: Raleway-Regular;
+    color: #2B2B2B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.results__title {
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 54px;
+    padding: 20px 0 20px 0;
+    letter-spacing: 7px;
+}
+.results__list {
+    margin: 0;
+    font-size: 34px;
+    line-height: 2.3;
+    margin-left: 100px;
+}
+.results__item {
+    list-style: none;
+    background: url("..//img/arrows1.png") no-repeat 0 22px;
+    padding-left: 50px;
+}

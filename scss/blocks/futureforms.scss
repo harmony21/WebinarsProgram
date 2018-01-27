@@ -1,0 +1,26 @@
+.futureforms {
+    background: url("..//img/snow-micro-circles.png") center center;
+    width: 100%;
+    min-height: 100vh;
+    font-family: Raleway-Regular;
+    color: #2B2B2B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.date {
+    &.future {
+        letter-spacing: 11px;
+    }
+}
+
+.about__item {
+    &.future {
+        background: url("..//img/arrows-grey.png") no-repeat 0 5px;
+    }  
+}
+.result {
+    &.future {
+        background: url("..//img/background12.png");
+    }
+}

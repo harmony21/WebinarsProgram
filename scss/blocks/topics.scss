@@ -1,0 +1,58 @@
+.topics {
+    background: url("..//img/trading-education.png") center center;
+    width: 100%;
+    background-size: cover;
+    min-height: 100vh;
+    font-family: Raleway-Regular;
+    color: #2B2B2B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.topics__title {
+    margin: 0;
+    text-align: center;
+    font-size: 40px;
+    padding: 30px 10px 30px 10px;
+    text-transform: uppercase;
+}
+.topics__info {
+    display: flex;
+    &.left {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+}
+.top {
+    width: 660px;
+    margin-left: 44px;
+}
+.topics__list {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    line-height: 2;
+    margin-top: 20px;
+    margin-left: 115px;
+    margin-block-end: 20px;
+}
+.topics__item {
+    list-style: none;
+    background: url("..//img/arrows.png") no-repeat 0 18px;
+    padding-left: 30px;
+
+}
+.topics__time {
+    margin: 10px 0px;
+    margin-left: 115px;
+    font-size: 30px;
+    // color: #ec3c24; 
+}
+.topics__cost {
+    margin: 20px 0px;
+    margin-left: 115px;
+    font-size: 32px;
+    color: #314d63; 
+    font-weight: bold;
+}

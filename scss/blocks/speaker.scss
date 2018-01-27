@@ -1,0 +1,63 @@
+.speaker {
+    background: url("..//img/background6.png") center center;
+    width: 100%;
+    min-height: 100vh;
+    font-family: Raleway-Regular;
+    color: #2B2B2B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.speaker__info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 90px 10px 90px;
+}
+.speaker__who {
+    margin: 0;
+    font-size: 34px;
+}
+.speaker__name {
+    margin: 0;
+    font-size: 44px;
+    margin-top: 10px;
+}
+.speaker__list {
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    line-height: 2.3;
+    margin-top: 25px;
+}
+.speaker__item {
+    list-style: none;
+    background: url("..//img/arrows.png") no-repeat 0 18px;
+    padding-left: 30px;
+}
+.speaker__quote {
+    margin: 0 90px;
+    background: #f9f9f9;
+    border-left: 10px solid #314d63;;
+    padding: 10px 20px;
+    font-family: Century Gothic;
+    font-size: 18px;
+    font-style: italic;
+    quotes: "\201C""\201D""\2018""\2019"; 
+    text-align: justify; 
+    &:before {
+        font-family: Georgia,serif;
+        color: #314d63;
+        content: open-quote;
+        font-size: 4em;
+        line-height: 0.1em;
+        margin-right: 0.25em;
+        vertical-align: -0.4em;
+    }
+    p {
+        display: inline;
+        line-height: 1.5;
+    }
+}
+.quote-p, .quote-name {
+    margin-left: 50px;
+}

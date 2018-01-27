@@ -1,0 +1,71 @@
+.welcome {
+    background: url("..//img/back-books.png") center center;
+    width: 100%;
+    min-height: 100vh;
+    font-family: Raleway-Regular;
+    display: flex;
+    flex-direction: column;
+}
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: #F8F8FF;
+}
+.logo {
+    width: 200px;
+}
+.link {
+    font-size: 20px;
+    text-decoration: none;
+    color: #314d63;
+    &:hover {
+        cursor: pointer;
+        color: #ec3c24;
+    }
+}
+.author {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px 0 50px;
+    align-items: flex-end;
+    font-weight: bold;
+    color: #2B2B2B;
+}
+.author__left {
+    font-size: 32px;
+}
+.author__right {
+    font-size: 26px;
+    text-align: right;
+}
+.welcome-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    text-align: center;
+    line-height: 1.7;
+    align-items: center;
+    margin-top: 90px;
+}
+.welcome-info__text {
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 26px;
+    color: #2B2B2B;
+}
+.welcome-info__title {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 67px;
+    color: #d32e17;
+}
+.welcome-info__time {
+    margin: 0;
+    font-size: 30px;
+    color: #2B2B2B;
+    font-weight: bold;
+}

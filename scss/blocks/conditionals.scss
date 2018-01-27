@@ -1,0 +1,20 @@
+.conditionals {
+    background: url("..//img/gray-micro-honeycombs.png") center center;
+    width: 100%;
+    min-height: 100vh;
+    font-family: Raleway-Regular;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.date {
+    &.cond {
+        letter-spacing: 11px;
+    }
+}
+.result {
+    &.cond {
+        background: url("..//img/steel-blue-micro-grain.png");
+    }
+}

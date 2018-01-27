@@ -1,0 +1,69 @@
+.pastforms {
+    background: url("..//img/11-fon-dlya-sayta.png") center center;
+    width: 100%;
+    min-height: 100vh;
+    font-family: Raleway-Regular;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.date-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 40px 0px 40px;
+    align-items: center;
+}
+.date {
+    text-transform: uppercase;
+    font-size: 32px;
+    text-align: justify;
+    letter-spacing: 14px;
+}
+.time {
+    font-size: 22px;
+}
+.date-title__right {
+    text-align: left;
+    font-size: 36px;
+}
+.about__question {
+    margin: 0;
+    margin-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 38px;
+}
+.about__list {
+    margin: 0;
+    padding: 0;
+    margin-left: 350px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.about__item {
+    list-style: none;
+    background: url("..//img/arrows-white.png") no-repeat 0 5px;
+    padding-left: 40px;
+    font-size: 22px;
+    line-height: 1.5;
+}
+.result {
+    width: 50%;
+    margin: 30px auto 20px auto;
+    box-shadow: 0px 2px 3px #555;
+    border: 1px solid #D6D3D3;
+    border-bottom: 2px solid #C4C2C2;
+    border-radius: 5px;
+    padding: 15px 25px ;
+    font-size: 22px;
+    text-align: center;
+    background: url("..//img/10-fon-dlya-sayta.png");
+}
+.result__text {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+}

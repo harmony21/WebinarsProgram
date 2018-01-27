@@ -1,0 +1,55 @@
+.registration {
+    background: url("..//img/back-book.png") center center;
+    width: 100%;
+    min-height: 100vh;
+    font-family: Raleway-Regular;
+    color: #2B2B2B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.registration__title {
+    text-align: center;
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px 0 15px 0;
+    line-height: 1.5;
+    font-size: 34px;
+}
+.registration-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 50px 0 50px;
+    text-align: center;
+    line-height: 1.7;
+    align-items: center;
+}
+.registration-info__text {
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 26px;
+    color: #2B2B2B;
+}
+.registration-info__title {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 67px;
+    color: #d32e17;
+}
+.registration-info__time {
+    margin: 0;
+    font-size: 30px;
+    color: #2B2B2B;
+    font-weight: bold;
+    text-align: left;
+}
+.registration-info__cost {
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #314d63;
+    font-weight: bold;
+    text-align: left;
+}
