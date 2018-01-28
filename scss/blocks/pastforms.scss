@@ -65,10 +65,9 @@
     line-height: 1.7;
 }
 .result {
-    width: 55%;
-    padding: 15px 40px ;
+    width: 80%;
+    padding: 25px 40px ;
     font-size: 24px;
-    text-align: justify;
     text-transform: uppercase;
     line-height: 1.2;
     @include tablets {

@@ -324,10 +324,9 @@
   line-height: 1.7; }
 
 .result {
-  width: 55%;
-  padding: 15px 40px;
+  width: 80%;
+  padding: 25px 40px;
   font-size: 24px;
-  text-align: justify;
   text-transform: uppercase;
   line-height: 1.2; }
   @media screen and (max-width: 1024px) {
@@ -372,7 +371,7 @@
     font-size: 52px; } }
 
 .result.future {
-  width: 50%; }
+  width: 80%; }
   @media screen and (max-width: 1024px) {
     .result.future {
       width: 90%; } }
@@ -411,7 +410,7 @@
     font-size: 50px; } }
 
 .result.cond {
-  width: 60%; }
+  width: 80%; }
   @media screen and (max-width: 1024px) {
     .result.cond {
       width: 90%; } }
@@ -439,7 +438,7 @@
   letter-spacing: 5px; }
 
 .result.verb {
-  width: 50%; }
+  width: 80%; }
   @media screen and (max-width: 1024px) {
     .result.verb {
       width: 90%; } }
