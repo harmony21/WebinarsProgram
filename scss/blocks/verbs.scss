@@ -1,12 +1,15 @@
 .verbs {
     background: url("..//img/snow-micro-circles.png") center center;
     width: 100%;
-    min-height: 100vh;
+    // min-height: 100vh;
     font-family: Raleway-Regular;
     color: #2B2B2B;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @include tablets {
+        min-height: 0;
+    }
 }
 .date {
     &.verb {
@@ -15,6 +18,9 @@
 }
 .result {
     &.verb {
-        width: 55%;
+        width: 50%;
+        @include tablets {
+            width: 90%;
+        }
     }
 }

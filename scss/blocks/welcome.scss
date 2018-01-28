@@ -1,3 +1,6 @@
+.wrapper {
+    min-height: 100vh;
+}
 .welcome {
     background: url("..//img/back-books.png") center center;
     width: 100%;
@@ -22,7 +25,7 @@
     color: #314d63;
     &:hover {
         cursor: pointer;
-        color: #ec3c24;
+        color: #8C0606;
     }
 }
 .author {
@@ -36,13 +39,22 @@
 .author__left {
     font-size: 32px;
     text-transform: uppercase;
+    @include tablets {
+        font-size: 28px;
+    }
 }
 .author__right {
     font-size: 24px;
     text-align: left;
+    @include tablets {
+        font-size: 20px;
+    }
 }
 .start {
     font-size: 32px;
+    @include tablets {
+        font-size: 28px;
+    }
 }
 .welcome-info {
     display: flex;
@@ -51,6 +63,9 @@
     text-align: left;
     line-height: 1.7;
     align-items: center;
+    @include tablets {
+        line-height: 1.5;
+    }
 }
 .welcome-info__text {
     padding: 0;
@@ -58,20 +73,31 @@
     text-transform: uppercase;
     font-size: 26px;
     color: #2B2B2B;
+    @include tablets {
+        font-size: 22px;
+    }
 }
 .welcome-info__title {
     margin: 0;
     padding: 0;
     text-transform: uppercase;
     font-size: 67px;
-    color: #d32e17;
+    color: #8C0606;
     margin-top: -20px;
+    @include tablets {
+        font-size: 48px;
+        width: 50%;
+        margin-top: 0; 
+    }
 }
 .welcome-info__time, .welcome-info__level {
     margin: 0;
     font-size: 30px;
     color: #2B2B2B;
     font-weight: bold;
+    @include tablets {
+        font-size: 22px;
+    }
 }
 .welcome-info__level {
     margin-top: 10px; 

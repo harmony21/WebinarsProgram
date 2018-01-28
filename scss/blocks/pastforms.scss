@@ -1,12 +1,14 @@
 .pastforms {
-    background: url("..//img/gray-micro-honeycombs.png") center center;
+    background: url("..//img/gray-micro-circles.png") center center;
     width: 100%;
-    min-height: 100vh;
+    // min-height: 100vh;
     font-family: Raleway-Regular;
     color: white;
     display: flex;
     flex-direction: column;
-    // justify-content: space-between;
+    @include tablets {
+        min-height: 0;
+    }
 }
 .date-title {
     display: flex;
@@ -19,29 +21,41 @@
     font-size: 40px;
     text-align: justify;
     letter-spacing: 8px;
-    color: #d32e17;
+    color: #8C0606;
     font-family: Raleway-Bold;
+    @include tablets {
+        font-size: 30px;
+    }
 }
 .time {
     font-size: 22px;
+    @include tablets {
+        font-size: 18px;
+    }
 }
 .date-title__right {
     text-align: left;
     font-size: 72px;
-    color: #d32e17;
+    color: #8C0606;
     font-family: Raleway-Bold;
+    @include tablets {
+        font-size: 54px;
+    }
 }
 .about {
     background-color: white;
     color: #2B2B2B;
-    padding: 30px 0;
 }
 .about__list {
     margin: 0;
     padding: 0;
-    margin-left: 340px;
+    margin-left: 320px;
     margin-top: 15px;
     margin-bottom: 15px;
+    @include tablets {
+        margin-left: 0;
+        padding-left: 40px;
+    }
 }
 .about__item {
     list-style: none;
@@ -51,10 +65,21 @@
     line-height: 1.7;
 }
 .result {
-    width: 60%;
+    width: 55%;
     padding: 15px 40px ;
-    font-size: 30px;
+    font-size: 24px;
     text-align: justify;
     text-transform: uppercase;
-    line-height: 1.5;
+    line-height: 1.2;
+    @include tablets {
+        width: 90%;
+        padding: 20px 0;
+        margin: 0 auto;
+        line-height: 1.2;
+        font-size: 26px;
+    }
+}
+.pastline {
+    margin: 0;
+    border: 7px solid white;
 }

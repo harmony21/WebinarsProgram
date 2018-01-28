@@ -1,20 +1,40 @@
 .futureforms {
     background: url("..//img/snow-micro-circles.png") center center;
     width: 100%;
-    min-height: 100vh;
+    // min-height: 100vh;
     font-family: Raleway-Regular;
     color: #2B2B2B;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @include tablets {
+        min-height: 0;
+    }
 }
 .date {
     &.future {
         letter-spacing: 5px;
+        @include tablets {
+            letter-spacing: 6px;
+        }
+    }
+}
+.date-title__right {
+    &.future {
+        @include tablets {
+            font-size: 52px;
+        }
     }
 }
 .result {
     &.future {
         width: 50%;
+        @include tablets {
+            width: 90%;
+        }
     }
+}
+.futureline {
+    margin: 0;
+    border: 7px solid #314d63;
 }

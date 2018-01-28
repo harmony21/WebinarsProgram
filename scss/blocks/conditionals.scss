@@ -1,25 +1,36 @@
 .conditionals {
-    background: url("..//img/gray-micro-honeycombs.png") center center;
+    background: url("..//img/gray-micro-circles.png") center center;
     width: 100%;
-    min-height: 100vh;
+    // min-height: 100vh;
     font-family: Raleway-Regular;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @include tablets {
+        min-height: 0;
+    }
 }
 .date {
     &.cond {
         letter-spacing: 5px;
+        @include tablets {
+            letter-spacing: 6px;
+        }
     }
 }
 .date-title__right {
     &.cond {
-        font-size: 54px;
+        @include tablets {
+            font-size: 50px;
+        }
     }
 }
 .result {
     &.cond {
-        width: 55%;
+        width: 60%;
+        @include tablets {
+            width: 90%;
+        }
     }
 }

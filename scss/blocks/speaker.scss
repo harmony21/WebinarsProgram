@@ -8,19 +8,39 @@
     flex-direction: column;
     justify-content: center;
 }
+.photo {
+   @include tablets {
+       height: 300px;
+       width: 260px;
+       margin: 0 auto;
+   }
+}
 .speaker__info {
     display: flex;
     justify-content: space-between;
     padding: 50px 90px 10px 90px;
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .speaker__who {
     margin: 0;
     font-size: 34px;
+    @include tablets {
+        margin-top: 30px;
+        font-size: 30px;
+        text-align: center;
+    }
 }
 .speaker__name {
     margin: 0;
     font-size: 44px;
     margin-top: 10px;
+    @include tablets {
+        font-size: 40px;
+        text-align: center;
+    }
 }
 .speaker__list {
     margin: 0;
@@ -28,17 +48,25 @@
     font-size: 25px;
     line-height: 2.3;
     margin-top: 25px;
+    @include tablets {
+        line-height: 2;
+        font-size: 22px;
+    }
 }
 .speaker__item {
     list-style: none;
     background: url("..//img/arrows.png") no-repeat 0 18px;
     padding-left: 30px;
+    @include tablets {
+        background: url("..//img/arrows.png") no-repeat 0 14px;
+    }
 }
 .speaker__quote {
-    margin: 30px 90px 40px 90px;
+    width: 55%;
+    margin: 30px auto 40px auto;
     background: #f9f9f9;
     border-left: 10px solid #314d63;;
-    padding: 10px 20px;
+    padding: 20px 60px;
     font-family: Century Gothic;
     font-size: 18px;
     font-style: italic;
@@ -62,15 +90,24 @@
     margin-left: 50px;
 }
 .quote-name {
-    margin-left: 945px;
+    // position: relative;
+    right: 0;
+    text-align: right;
+    // margin-left: 945px;
+    @include tablets {
+        margin-left: 360px;
+    }
     &:before {
         font-family: Georgia,serif;
         color: #314d63;
         content: close-quote;
         font-size: 4em;
         line-height: 0.1em;
-        position: absolute;
-        right: 0;
-        margin-right: 480px;
+        // position: absolute;
+        // right: 0;
+        // margin-right: 480px;
+        @include tablets {
+            margin-right: 330px;
+        }
     }
 }
