@@ -9,12 +9,12 @@
     justify-content: center;
 }
 .results__title {
+    width: 80%;
+    margin: 0 auto;
     text-align: center;
-    margin: 0;
     text-transform: uppercase;
-    font-size: 54px;
-    padding: 20px 0 20px 0;
-    letter-spacing: 7px;
+    font-size: 46px;
+    padding: 20px 0;
 }
 .results__list {
     margin: 0;
@@ -24,6 +24,6 @@
 }
 .results__item {
     list-style: none;
-    background: url("..//img/arrows1.png") no-repeat 0 22px;
-    padding-left: 50px;
+    background: url("..//img/appointmentnewicon.png") no-repeat 0 19px;
+    padding-left: 60px;
 }

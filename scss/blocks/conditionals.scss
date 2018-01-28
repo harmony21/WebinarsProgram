@@ -10,11 +10,16 @@
 }
 .date {
     &.cond {
-        letter-spacing: 11px;
+        letter-spacing: 5px;
+    }
+}
+.date-title__right {
+    &.cond {
+        font-size: 54px;
     }
 }
 .result {
     &.cond {
-        background: url("..//img/steel-blue-micro-grain.png");
+        width: 55%;
     }
 }

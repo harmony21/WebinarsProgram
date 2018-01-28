@@ -1,5 +1,5 @@
 .topics {
-    background: url("..//img/trading-education.png") center center;
+    background-color: white;
     width: 100%;
     background-size: cover;
     min-height: 100vh;
@@ -31,7 +31,7 @@
 .topics__list {
     margin: 0;
     padding: 0;
-    font-size: 30px;
+    font-size: 28px;
     line-height: 2;
     margin-top: 20px;
     margin-left: 115px;
@@ -39,15 +39,26 @@
 }
 .topics__item {
     list-style: none;
-    background: url("..//img/arrows.png") no-repeat 0 18px;
-    padding-left: 30px;
-
-}
-.topics__time {
-    margin: 10px 0px;
-    margin-left: 115px;
-    font-size: 30px;
-    // color: #ec3c24; 
+    padding-left: 50px;
+    text-transform: uppercase;
+    &.search {
+        background: url("..//img/search.png") no-repeat 0 16px; 
+    }
+    &.star {
+        background: url("..//img/star.png") no-repeat 0 10px; 
+    }
+    &.news {
+        background: url("..//img/news.png") no-repeat 0 13px; 
+    }
+    &.pen {
+        background: url("..//img/pen.png") no-repeat 0 13px; 
+    }
+    &.like {
+        background: url("..//img/like.png") no-repeat 0 11px; 
+    }
+    &.bubble {
+        background: url("..//img/bubble.png") no-repeat 0 12px; 
+    }
 }
 .topics__cost {
     margin: 20px 0px;

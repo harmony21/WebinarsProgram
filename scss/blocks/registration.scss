@@ -1,5 +1,6 @@
 .registration {
-    background: url("..//img/back-book.png") center center;
+    background: url("..//img/contacts.jpg") center center;
+    background-size: cover;
     width: 100%;
     min-height: 100vh;
     font-family: Raleway-Regular;
@@ -9,34 +10,20 @@
     justify-content: center;
 }
 .registration__title {
-    text-align: center;
-    width: 85%;
-    margin: 0 auto;
-    padding: 20px 0 15px 0;
+    width: 70%;
+    margin: 0;
+    padding: 30px 0 0 40px;
     line-height: 1.5;
-    font-size: 34px;
+    font-size: 50px;
 }
-.registration-info {
-    display: flex;
-    justify-content: space-between;
-    padding: 50px 50px 0 50px;
-    text-align: center;
+.registration__list {
     line-height: 1.7;
-    align-items: center;
-}
-.registration-info__text {
-    padding: 0;
-    margin: 0;
-    text-transform: uppercase;
-    font-size: 26px;
-    color: #2B2B2B;
-}
-.registration-info__title {
-    margin: 0;
-    padding: 0;
-    text-transform: uppercase;
-    font-size: 67px;
-    color: #d32e17;
+    .registration__item {
+        font-size: 32px;
+        list-style: none;
+        background: url("..//img/arrows1.png") no-repeat 0 10px;
+        padding-left: 50px;
+    }
 }
 .registration-info__time {
     margin: 0;
@@ -44,12 +31,38 @@
     color: #2B2B2B;
     font-weight: bold;
     text-align: left;
+    margin-left: 40px;
 }
 .registration-info__cost {
     margin-top: 30px;
-    text-transform: uppercase;
     font-size: 30px;
     color: #314d63;
     font-weight: bold;
     text-align: left;
+    margin-left: 40px;
+}
+.reg {
+    margin-left: 40px;
+}
+.footer {
+    background-color: #f7f8fa;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.3;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.footer__details {
+    width: 45%;
+    p {
+        margin: 0;
+        padding: 10px;
+    }
+}
+.footer__contacts {
+    text-align: right;
+    width: 45%;
 }

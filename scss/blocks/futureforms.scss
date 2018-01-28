@@ -10,17 +10,11 @@
 }
 .date {
     &.future {
-        letter-spacing: 11px;
+        letter-spacing: 5px;
     }
-}
-
-.about__item {
-    &.future {
-        background: url("..//img/arrows-grey.png") no-repeat 0 5px;
-    }  
 }
 .result {
     &.future {
-        background: url("..//img/background12.png");
+        width: 50%;
     }
 }

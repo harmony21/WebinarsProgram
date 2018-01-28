@@ -1,5 +1,5 @@
 .verbs {
-    background: url("..//img/light-grey-glow-cells-2.png") center center;
+    background: url("..//img/snow-micro-circles.png") center center;
     width: 100%;
     min-height: 100vh;
     font-family: Raleway-Regular;
@@ -10,16 +10,11 @@
 }
 .date {
     &.verb {
-        letter-spacing: 10.5px;
+        letter-spacing: 5px;
     }
-}
-.about__item {
-    &.verb {
-        background: url("..//img/arrows-grey.png") no-repeat 0 5px;
-    }  
 }
 .result {
     &.verb {
-        background: url("..//img/background34.png");
+        width: 55%;
     }
 }

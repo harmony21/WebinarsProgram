@@ -1,5 +1,5 @@
 .speaker {
-    background: url("..//img/background6.png") center center;
+    background-color: white;
     width: 100%;
     min-height: 100vh;
     font-family: Raleway-Regular;
@@ -11,7 +11,7 @@
 .speaker__info {
     display: flex;
     justify-content: space-between;
-    padding: 0 90px 10px 90px;
+    padding: 50px 90px 10px 90px;
 }
 .speaker__who {
     margin: 0;
@@ -35,7 +35,7 @@
     padding-left: 30px;
 }
 .speaker__quote {
-    margin: 0 90px;
+    margin: 30px 90px 40px 90px;
     background: #f9f9f9;
     border-left: 10px solid #314d63;;
     padding: 10px 20px;
@@ -58,6 +58,19 @@
         line-height: 1.5;
     }
 }
-.quote-p, .quote-name {
+.quote-p {
     margin-left: 50px;
+}
+.quote-name {
+    margin-left: 945px;
+    &:before {
+        font-family: Georgia,serif;
+        color: #314d63;
+        content: close-quote;
+        font-size: 4em;
+        line-height: 0.1em;
+        position: absolute;
+        right: 0;
+        margin-right: 480px;
+    }
 }
