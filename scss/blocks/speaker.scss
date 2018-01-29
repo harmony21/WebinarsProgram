@@ -7,12 +7,20 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @include phones {
+        min-height: 0;
+    }
 }
 .photo {
    @include tablets {
        height: 300px;
        width: 260px;
        margin: 0 auto;
+   }
+   @include phones {
+       width: 180px;
+       height: 200px;
+       border-radius: 30% 30%;
    }
 }
 .speaker__info {
@@ -23,6 +31,9 @@
         flex-direction: column;
         align-items: center;
     }
+    @include phones {
+        padding: 30px 12px 10px 12px;
+    }
 }
 .speaker__who {
     margin: 0;
@@ -32,6 +43,9 @@
         font-size: 30px;
         text-align: center;
     }
+    @include phones {
+        font-size: 22px;
+    }
 }
 .speaker__name {
     margin: 0;
@@ -40,6 +54,9 @@
     @include tablets {
         font-size: 40px;
         text-align: center;
+    }
+    @include phones {
+        font-size: 32px;
     }
 }
 .speaker__list {
@@ -52,6 +69,9 @@
         line-height: 2;
         font-size: 22px;
     }
+    @include phones {
+        font-size: 17px;
+    }
 }
 .speaker__item {
     list-style: none;
@@ -59,6 +79,9 @@
     padding-left: 30px;
     @include tablets {
         background: url("..//img/arrows.png") no-repeat 0 14px;
+    }
+    @include phones {
+        background: url("..//img/arrows.png") no-repeat 0 7px;
     }
 }
 .speaker__quote {
@@ -72,6 +95,14 @@
     font-style: italic;
     quotes: "\201C""\201D""\2018""\2019"; 
     text-align: justify; 
+    @include tablets {
+        width: 70%;
+    }
+    @include phones {
+        font-size: 14px;
+        padding: 20px;
+        margin: 10px auto 30px auto;
+    }
     &:before {
         font-family: Georgia,serif;
         color: #314d63;
@@ -90,24 +121,16 @@
     margin-left: 50px;
 }
 .quote-name {
-    // position: relative;
     right: 0;
     text-align: right;
-    // margin-left: 945px;
-    @include tablets {
-        margin-left: 360px;
-    }
     &:before {
         font-family: Georgia,serif;
         color: #314d63;
         content: close-quote;
         font-size: 4em;
         line-height: 0.1em;
-        // position: absolute;
-        // right: 0;
-        // margin-right: 480px;
-        @include tablets {
-            margin-right: 330px;
+        @include phones {
+            display: none;
         }
     }
 }

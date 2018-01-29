@@ -1,7 +1,6 @@
 .verbs {
     background: url("..//img/snow-micro-circles.png") center center;
     width: 100%;
-    // min-height: 100vh;
     font-family: Raleway-Regular;
     color: #2B2B2B;
     display: flex;
@@ -14,6 +13,16 @@
 .date {
     &.verb {
         letter-spacing: 5px;
+        @include phones {
+            letter-spacing: 2px;
+        }
+    }
+}
+.date-title__right {
+    &.verb {
+        @include phones {
+            font-size: 24px;
+        }
     }
 }
 .result {

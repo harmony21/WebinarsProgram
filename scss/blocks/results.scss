@@ -11,6 +11,9 @@
         min-height: 0;
         padding: 50px 0;
     }
+    @include phones {
+        padding: 15px 0;
+    }
 }
 .results__title {
     width: 80%;
@@ -22,6 +25,11 @@
     @include tablets {
         font-size: 36px;
     }
+    @include phones {
+        font-size: 24px;
+        width: 100%;
+        margin: 0;
+    }
 }
 .results__list {
     margin: 0;
@@ -29,8 +37,12 @@
     line-height: 2.3;
     margin-left: 100px;
     @include tablets {
-        font-size: 28px;
+        font-size: 26px;
         margin-left: 0;
+    }
+    @include phones {
+        font-size: 14px;
+        margin-bottom: 10px;
     }
 }
 .results__item {
@@ -39,5 +51,10 @@
     padding-left: 60px;
     @include tablets {
         background: url("..//img/appointmentnewicon.png") no-repeat 0 12px;
+    }
+    @include phones {
+        background: url("..//img/appointmentnewicon_small.png") no-repeat 0 8px;
+        padding-left: 30px;
+        margin-left: -28px;
     }
 }

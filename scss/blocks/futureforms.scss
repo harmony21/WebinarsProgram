@@ -1,7 +1,6 @@
 .futureforms {
     background: url("..//img/snow-micro-circles.png") center center;
     width: 100%;
-    // min-height: 100vh;
     font-family: Raleway-Regular;
     color: #2B2B2B;
     display: flex;
@@ -17,12 +16,19 @@
         @include tablets {
             letter-spacing: 6px;
         }
+        @include phones {
+            font-size: 18px;
+            letter-spacing: 4px;
+        }
     }
 }
 .date-title__right {
     &.future {
         @include tablets {
             font-size: 52px;
+        }
+        @include phones {
+            font-size: 25px;
         }
     }
 }
@@ -37,4 +43,9 @@
 .futureline {
     margin: 0;
     border: 7px solid #314d63;
+}
+.br {
+    @include phones {
+        display: none;
+    }
 }

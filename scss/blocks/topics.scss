@@ -2,7 +2,6 @@
     background-color: white;
     width: 100%;
     background-size: cover;
-    // min-height: 100vh;
     font-family: Raleway-Regular;
     color: #2B2B2B;
     display: flex;
@@ -11,6 +10,7 @@
     padding: 20px 0;
     @include tablets {
         min-height: 0;
+        padding: 0;
     }
 }
 .topics__info {
@@ -19,6 +19,9 @@
         display: flex;
         flex-direction: column;
         width: 70%;
+        @include phones {
+            width: 100%;
+        }
     }
 }
 .topics__title {
@@ -27,10 +30,23 @@
     margin: 0;
     padding: 20px 0 0 0;
     margin-left: 162px;
+    @include tablets {
+        font-size: 46px;
+        margin-left: 50px;
+    }
+    @include phones {
+        font-size: 30px;
+        text-align: center;
+        margin-left: 0;
+        padding: 30px 0 0 0;
+    }
 }
 .top {
     width: 660px;
     margin-left: 44px;
+    @include phones {
+        display: none;
+    }
 }
 .topics__list {
     margin: 0;
@@ -39,13 +55,18 @@
     line-height: 2;
     margin-top: 20px;
     margin-left: 115px;
-    margin-block-end: 20px;
     @include tablets {
         margin-left: 40px;
-        width: 100%;
+        // width: 100%;
         font-size: 29px;
         line-height: 2.5;
-        padding: 40px 0 0 0;
+        padding: 20px 0 0 0;
+    }
+    @include phones {
+        font-size: 18px;
+        margin-top: 0;
+        padding: 20px 0 0 20px;
+        margin-left: 0;
     }
 }
 .topics__item {
@@ -55,23 +76,44 @@
     @include tablets {
         text-transform: none;
     }
+    @include phones {
+        padding-left: 40px;
+    }
     &.search {
         background: url("..//img/search.png") no-repeat 0 16px; 
+        @include phones {
+            background: url("..//img/search.png") no-repeat 0 10px; 
+        }
     }
     &.star {
         background: url("..//img/star.png") no-repeat 0 10px; 
+        @include phones {
+            background: url("..//img/star.png") no-repeat 0 7px; 
+        }
     }
     &.news {
         background: url("..//img/news.png") no-repeat 0 13px; 
+        @include phones {
+            background: url("..//img/news.png") no-repeat 0 10px; 
+        }
     }
     &.pen {
-        background: url("..//img/pen.png") no-repeat 0 13px; 
+        background: url("..//img/pen.png") no-repeat 0 13px;
+        @include phones {
+            background: url("..//img/pen.png") no-repeat 0 9px; 
+        } 
     }
     &.like {
         background: url("..//img/like.png") no-repeat 0 11px; 
+        @include phones {
+            background: url("..//img/like.png") no-repeat 0 6px; 
+        } 
     }
     &.bubble {
         background: url("..//img/bubble.png") no-repeat 0 12px; 
+        @include phones {
+            background: url("..//img/bubble.png") no-repeat 0 8px; 
+        }
     }
 }
 .topics__cost {
@@ -82,9 +124,17 @@
     font-weight: bold;
     @include tablets {
         margin-left: 40px;
-        padding-bottom: 40px;
+    }
+    @include phones {
+        font-size: 22px;
+        text-align: center;
+        margin-left: 0;
     }
 }
 .topics__cost-title {
     font-size: 40px;
+    @include phones {
+        font-size: 26px;
+        text-align: center;
+    }
 }

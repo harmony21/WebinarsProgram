@@ -1,6 +1,3 @@
-.wrapper {
-    min-height: 100vh;
-}
 .welcome {
     background: url("..//img/back-books.png") center center;
     width: 100%;
@@ -9,20 +6,33 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @include phones {
+        min-height: 0;
+
+    }
 }
 .header__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 50px;
+    @include phones {
+        padding: 10px 20px;
+    }
 }
 .logo {
     width: 200px;
+    @include phones {
+        width: 100px;
+    }
 }
 .link {
     font-size: 20px;
     text-decoration: none;
     color: #314d63;
+    @include phones {
+        font-size: 14px;
+    }
     &:hover {
         cursor: pointer;
         color: #8C0606;
@@ -35,12 +45,18 @@
     align-items: flex-end;
     font-weight: bold;
     color: #2B2B2B;
+    @include phones {
+        padding: 40px 20px 0 20px;
+    }
 }
 .author__left {
     font-size: 32px;
     text-transform: uppercase;
     @include tablets {
         font-size: 28px;
+    }
+    @include phones {
+        font-size: 18px;
     }
 }
 .author__right {
@@ -49,11 +65,18 @@
     @include tablets {
         font-size: 20px;
     }
+    @include phones {
+        font-size: 14px;
+        text-align: right;
+    }
 }
 .start {
     font-size: 32px;
     @include tablets {
         font-size: 28px;
+    }
+    @include phones {
+        font-size: 18px;
     }
 }
 .welcome-info {
@@ -76,6 +99,10 @@
     @include tablets {
         font-size: 22px;
     }
+    @include phones {
+        font-size: 21px;
+        text-align: center;
+    }
 }
 .welcome-info__title {
     margin: 0;
@@ -89,6 +116,12 @@
         width: 50%;
         margin-top: 0; 
     }
+    @include phones {
+        font-size: 34px;
+        text-align: center;
+        width: 100%;
+        margin-top: 10px;
+    }
 }
 .welcome-info__time, .welcome-info__level {
     margin: 0;
@@ -98,7 +131,16 @@
     @include tablets {
         font-size: 22px;
     }
+    @include phones {
+        font-size: 18px;
+        text-align: center;
+        margin-top: 20px;
+    }
 }
 .welcome-info__level {
     margin-top: 10px; 
+    @include phones {
+        font-size: 17px;
+        text-align: center;
+    }
 }

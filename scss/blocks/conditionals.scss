@@ -1,7 +1,6 @@
 .conditionals {
     background: url("..//img/gray-micro-circles.png") center center;
     width: 100%;
-    // min-height: 100vh;
     font-family: Raleway-Regular;
     color: white;
     display: flex;
@@ -17,6 +16,10 @@
         @include tablets {
             letter-spacing: 6px;
         }
+        @include phones {
+            font-size: 20px;
+            letter-spacing: 2.5px;
+        }
     }
 }
 .date-title__right {
@@ -24,13 +27,24 @@
         @include tablets {
             font-size: 50px;
         }
+        @include phones {
+            font-size: 25px;
+        }
+    }
+}
+.about__item {
+    &.cond {
+        @include phones {
+        font-size: 17px;
+        padding-left: 30px;
+        }
     }
 }
 .result {
     &.cond {
         width: 80%;
         @include tablets {
-            width: 90%;
+            width: 95%;
         }
     }
 }

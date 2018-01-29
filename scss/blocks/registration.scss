@@ -8,6 +8,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @include phones {
+        min-height: 0;
+    }
 }
 .registration__title {
     display: flex;
@@ -17,17 +20,37 @@
     padding: 20px 40px 0 40px;
     line-height: 1.5;
     @include tablets {
-        width: 90%;
-        font-size: 40px;
-        text-align: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    @include phones {
+        padding: 20px 5px 0 5px;
     }
 }
 .registration__text {
     font-weight: bold;
     font-size: 50px;
+    @include tablets {
+        font-size: 44px;
+    }
+    @include phones {
+        width: 100%;
+        font-size: 24px;
+        text-align: center;
+    }
 }
 .registration__date {
     font-size: 44px;
+    @include tablets {
+        font-size: 38px;
+        margin-top: 40px;
+    }
+    @include phones {
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+        margin-top: 20px;
+    }
 }
 .registration__list {
     line-height: 1.7;
@@ -36,6 +59,18 @@
         list-style: none;
         background: url("..//img/arrows1.png") no-repeat 0 12px;
         padding-left: 50px;
+        @include phones {
+            font-size: 23px;
+            margin-left: -28px;
+            padding-left: 35px;
+            background: url("..//img/arrows.png") no-repeat 0 12px;
+        }
+    }
+    @include tablets {
+        margin-bottom: 40px;
+    }
+    @include phones {
+        margin-bottom: 30px;
     }
 }
 .registration-info__time {
@@ -45,6 +80,11 @@
     font-weight: bold;
     text-align: left;
     margin-left: 40px;
+    @include phones {
+        font-size: 18px;
+        margin-left: 0;
+        text-align: center;
+    }
 }
 .registration-info__cost {
     margin-top: 30px;
@@ -54,16 +94,27 @@
     margin-left: 10px;
     width: 49%;
     text-align: right;
+    @include tablets {
+        text-align: left;
+        margin-left: 40px;
+        width: 50%;
+        font-size: 30px;
+    }
+    @include phones {
+        width: 100%;
+        font-size: 22px;
+        text-align: center;
+        margin-left: 0;
+    }
 }
 .reg {
     margin-left: 40px;
     @include tablets {
         width: 90%;
     }
-}
-.regline {
-    @include tablets {
-       display: none;
+    @include phones {
+        margin: 10px auto;
+        // display: none;
     }
 }
 .footer {
@@ -77,12 +128,19 @@
     left: 0;
     width: 100%;
     padding: 10px 0;
+    @include phones {
+        font-size: 7px;
+        padding: 0;
+    }
 }
 .footer__details {
     width: 48%;
     p {
         margin: 0;
         padding: 10px;
+        @include phones {
+            padding: 0;
+        }
     }
 }
 .footer__contacts {
