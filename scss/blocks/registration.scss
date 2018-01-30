@@ -59,11 +59,14 @@
         list-style: none;
         background: url("..//img/arrows1.png") no-repeat 0 12px;
         padding-left: 50px;
+        @include tablets {
+            font-size: 26px;
+        }
         @include phones {
-            font-size: 23px;
+            font-size: 18px;
             margin-left: -28px;
             padding-left: 35px;
-            background: url("..//img/arrows.png") no-repeat 0 12px;
+            background: url("..//img/arrows.png") no-repeat 0 6px;
         }
     }
     @include tablets {
@@ -73,6 +76,23 @@
         margin-bottom: 30px;
     }
 }
+.registration-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px 0 0;
+    @include phones {
+        flex-direction: column;
+    }
+}
+.registration-info__right {
+    display: flex;
+    align-items: center;
+    @include phones {
+        padding: 0;
+        margin-left: 30px;
+        margin-bottom: 40px;
+    }
+}
 .registration-info__time {
     margin: 0;
     font-size: 30px;
@@ -80,41 +100,56 @@
     font-weight: bold;
     text-align: left;
     margin-left: 40px;
+    @include tablets {
+        font-size: 24px;
+    }
     @include phones {
         font-size: 18px;
         margin-left: 0;
         text-align: center;
+        width: 100vw;
     }
 }
-.registration-info__cost {
-    margin-top: 30px;
-    font-size: 34px;
-    color: #314d63;
-    font-family: Raleway-Bold;
-    margin-left: 10px;
-    width: 49%;
-    text-align: right;
+.registration__cost {
+    display: flex;
+    margin: 20px 0;
+    align-items: flex-end;
     @include tablets {
-        text-align: left;
-        margin-left: 40px;
-        width: 50%;
-        font-size: 30px;
+        justify-content: space-between;
+        align-items: center;
     }
-    @include phones {
-        width: 100%;
-        font-size: 22px;
-        text-align: center;
-        margin-left: 0;
+    &.text {
+        margin-left: 40px;
+        font-size: 34px;
+        font-weight: bold;
+        color: #314d63;
+        @include tablets {
+            margin-left: 40px;
+            font-size: 24px;
+        }
+        @include phones {
+            font-size: 20px;
+            margin-left: 10px;
+        }
+    }
+    &.number {
+        font-size: 80px;
+        margin-left: 14px;
+        color: #314d63;
+        font-family: Raleway-Bold;
+        @include tablets {
+            margin-left: 0;
+            font-size: 50px;
+        }
+        @include phones {
+            font-size: 40px;
+        }
     }
 }
 .reg {
     margin-left: 40px;
     @include tablets {
         width: 90%;
-    }
-    @include phones {
-        margin: 10px auto;
-        // display: none;
     }
 }
 .footer {
