@@ -734,7 +734,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 20px 0;
+  margin: 5px 0 20px 0;
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end; }
@@ -752,9 +752,18 @@
       padding: 0 10px; } }
   .topics__cost.text {
     margin-left: 115px;
-    font-size: 32px;
     font-weight: bold;
-    color: #314d63; }
+    color: #314d63;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
     @media screen and (max-width: 1024px) {
       .topics__cost.text {
         margin-left: 0; } }
@@ -762,7 +771,7 @@
       .topics__cost.text {
         font-size: 18px; } }
   .topics__cost.number {
-    font-size: 60px;
+    font-size: 44px;
     margin-left: 25px;
     color: #314d63;
     font-family: Raleway-Bold; }
@@ -772,6 +781,14 @@
     @media screen and (max-width: 480px) {
       .topics__cost.number {
         font-size: 40px; } }
+
+.take-part {
+  font-size: 30px;
+  margin: 0; }
+
+.february {
+  margin: 0;
+  text-align: left; }
 
 @media screen and (max-width: 1024px) {
   .topics__info {
@@ -1022,9 +1039,18 @@
       align-items: center; } }
   .registration__cost.text {
     margin-left: 40px;
-    font-size: 28px;
     font-weight: bold;
-    color: #314d63; }
+    color: #314d63;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
     @media screen and (max-width: 1024px) {
       .registration__cost.text {
         margin-left: 40px;
@@ -1034,7 +1060,7 @@
         font-size: 20px;
         margin-left: 10px; } }
   .registration__cost.number {
-    font-size: 56px;
+    font-size: 44px;
     margin-left: 14px;
     color: #314d63;
     font-family: Raleway-Bold; }

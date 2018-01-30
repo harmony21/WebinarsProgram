@@ -145,7 +145,7 @@
 }
 .topics__cost {
     display: flex;
-    margin: 20px 0;
+    margin: 5px 0 20px 0;
     align-items: flex-end;
     @include tablets {
         justify-content: space-between;
@@ -157,9 +157,12 @@
     }
     &.text {
         margin-left: 115px;
-        font-size: 32px;
+        // font-size: 32px;
         font-weight: bold;
         color: #314d63;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
         @include tablets {
             margin-left: 0;
         }
@@ -168,7 +171,7 @@
         }
     }
     &.number {
-        font-size: 60px;
+        font-size: 44px;
         margin-left: 25px;
         color: #314d63;
         font-family: Raleway-Bold;
@@ -179,6 +182,14 @@
             font-size: 40px;
         }
     }
+}
+.take-part {
+    font-size: 30px;
+    margin: 0;
+}
+.february {
+    margin: 0;
+    text-align: left;
 }
 .topics__info {
     @include tablets {
