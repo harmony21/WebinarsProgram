@@ -752,7 +752,7 @@
       padding: 0 10px; } }
   .topics__cost.text {
     margin-left: 115px;
-    font-size: 38px;
+    font-size: 32px;
     font-weight: bold;
     color: #314d63; }
     @media screen and (max-width: 1024px) {
@@ -762,8 +762,8 @@
       .topics__cost.text {
         font-size: 18px; } }
   .topics__cost.number {
-    font-size: 80px;
-    margin-left: 14px;
+    font-size: 60px;
+    margin-left: 25px;
     color: #314d63;
     font-family: Raleway-Bold; }
     @media screen and (max-width: 1024px) {
@@ -1022,7 +1022,7 @@
       align-items: center; } }
   .registration__cost.text {
     margin-left: 40px;
-    font-size: 34px;
+    font-size: 28px;
     font-weight: bold;
     color: #314d63; }
     @media screen and (max-width: 1024px) {
@@ -1034,7 +1034,7 @@
         font-size: 20px;
         margin-left: 10px; } }
   .registration__cost.number {
-    font-size: 80px;
+    font-size: 56px;
     margin-left: 14px;
     color: #314d63;
     font-family: Raleway-Bold; }
